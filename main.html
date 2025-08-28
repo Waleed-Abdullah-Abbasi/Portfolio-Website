@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Waleed Abdullah | Portfolio</title>
+  <!-- Google Fonts: Poppins for modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* Header with Hero Section */
+    header {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      background-blend-mode: overlay;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.4em;
+      opacity: 0.9;
+      max-width: 600px;
+    }
+
+    /* Navigation */
+    nav {
+      background: #1a1a2e;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #1a1a2e;
+      border-bottom: 3px solid #1abc9c;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+
+    /* Project Styling */
+    .project {
+      margin-bottom: 25px;
+    }
+
+    .project h3 {
+      color: #2980b9;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .project p.date {
+      color: #7f8c8d;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+
+    /* Skills List */
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      background: #f8f9fa;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-left: 4px solid #1abc9c;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    /* Button Styling */
+    .btn {
+      display: inline-block;
+      background: #1abc9c;
+      color: white;
+      padding: 12px 25px;
+      margin-top: 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(26, 188, 156, 0.2);
+    }
+
+    .btn:hover {
+      background: #16a085;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(26, 188, 156, 0.3);
+    }
+
+    /* Contact Links */
+    .social-links a {
+      color: #2980b9;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .social-links a:hover {
+      color: #1abc9c;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #1a1a2e;
+      color: white;
+      margin-top: 50px;
+    }
+
+    footer p {
+      opacity: 0.8;
+      font-size: 0.9em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+      header p {
+        font-size: 1.1em;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .container {
+        padding: 15px;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Waleed Abdullah</h1>
+    <p>Computer Engineer | AI • Embedded Systems • AutoCAD</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a recent Computer Engineering graduate passionate about building intelligent systems that blend software, hardware, and design. 
+        My journey includes developing an <strong>AI medical chatbot</strong>, simulating <strong>Arduino-based smart home systems</strong> in Proteus, 
+        and creating detailed <strong>AutoCAD models</strong> of gears, buildings, and architectural landmarks like the Taj Mahal.
+      </p>
+      <p>
+        I aim to grow as a developer and engineer in fields like AI, IoT, and full-stack development. 
+        I'm open to internships, entry-level roles, and collaborative projects.
+      </p>
+      <a href="Waleed_Abdullah_CV.pdf" class="btn" target="_blank">📄 Download My CV</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>AI & ML:</strong> Python, TensorFlow, Rasa, scikit-learn, NLP</li>
+        <li><strong>Embedded Systems:</strong> Arduino, Proteus, C++, Sensors (PIR, DHT11)</li>
+        <li><strong>CAD Design:</strong> AutoCAD (2D/3D Modeling, Gears, Architectural Drafting)</li>
+        <li><strong>Mobile Development:</strong> Android (Java), Firebase, Android Studio</li>
+        <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>AI-Powered Medical Chatbot</h3>
+        <p class="date">Feb 2025 – Jun 2025</p>
+        <p>Developed a machine learning-driven chatbot using Python, TensorFlow, and Rasa to analyze symptoms and predict possible diseases. Trained a model using scikit-learn and used SQLite for patient history tracking.</p>
+      </div>
+
+      <div class="project">
+        <h3>Smart Home Automation (Proteus + Arduino)</h3>
+        <p class="date">Nov 2023 – Jan 2024</p>
+        <p>Simulated a lighting and security system using Arduino Uno and sensors in Proteus. Programmed C++ firmware for real-time control logic. Designed enclosures using AutoCAD.</p>
+      </div>
+
+      <div class="project">
+        <h3>CAD Design Projects</h3>
+        <p class="date">Jan 2022 – Present</p>
+        <p>Created precision spur gears, 2D house plans, and a 3D model of the Taj Mahal in AutoCAD. Practiced technical drafting, dimensioning, and 3D rendering.</p>
+      </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p><strong>Email:</strong> <a href="mailto:abbasiwaleed29918@gmail.com">abbasiwaleed29918@gmail.com</a></p>
+      <p><strong>Phone:</strong> +92 320 5454762</p>
+      <p><strong>Location:</strong> Rawalpindi, Punjab, Pakistan</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/waleed-abdullah-androiddeveloper/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Waleed-Abdullah-Abbasi" target="_blank">GitHub</a>
+      </div>
+      <a href="mailto:abbasiwaleed29918@gmail.com" class="btn">📧 Send Me an Email</a>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Waleed Abdullah. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
